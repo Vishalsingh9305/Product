@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Container and Heading Styles */
+.container {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray text */
+}
+
+/* Product List Styles */
+#products .list-group-item {
+  margin-bottom: 20px;
+  border-color: #ddd; /* Light gray border */
+  background-color: #f8f9fa; /* Light background color */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#products .list-group-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#products .list-group-item > .d-flex {
+  align-items: center;
+}
+
+#products .list-group-item h5 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #007bff; /* Blue text */
+}
+
+#products .list-group-item p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #6c757d; /* Medium gray text */
+}
+
+#products .list-group-item button {
+  min-width: 180px;
+  transition: transform 0.2s ease;
+}
+
+#products .list-group-item button:hover {
+  transform: scale(1.05);
+}
+
+/* Save for Later List Styles */
+#saveforlaterList .list-group-item {
+  margin-bottom: 20px;
+  border-color: #ddd; /* Light gray border */
+  background-color: #f8f9fa; /* Light background color */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#saveforlaterList .list-group-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#saveforlaterList .list-group-item > .d-flex {
+  align-items: center;
+}
+
+#saveforlaterList .list-group-item h5 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #dc3545; /* Red text */
+}
+
+#saveforlaterList .list-group-item p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #6c757d; /* Medium gray text */
+}
+
+#saveforlaterList .list-group-item button {
+  min-width: 140px;
+  transition: transform 0.2s ease;
+}
+
+#saveforlaterList .list-group-item button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #products .list-group-item button,
+  #saveforlaterList .list-group-item button {
+    min-width: 140px;
+  }
+}
