@@ -38,3 +38,4 @@ Function to delete a product from the save for later list by passing the id.
 1. **Start the JSON server:**
    ```bash
    json-server --watch db.json --port 3000
+2. **Start a html file**
